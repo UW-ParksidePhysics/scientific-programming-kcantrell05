@@ -2,5 +2,7 @@
 #import loops_and_lists.table_temperature_conversion_and_approximation
 #import loops_and_lists.sum_integers
 #import loops_and_lists.generate_coordinate_grid
-#import functions_and_branching.convert_celsius_temperature_to_fahrenheit
-import freefall_kinematics
+#import loops_and_lists.table_vertical_projectile_positions
+#import loops_and_lists.table_vertical_projectile_with_lists
+#import loops_and_lists.sum_integer_reciprocals_using_while
+#import loops_and_lists.calculate_vertical_projectile_with_nested_lists
