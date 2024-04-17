@@ -1,4 +1,10 @@
 # My Python project is Newton's Cradle.
+# The functions listed are to show the elements of Newton's Cradle in action. Displayed currently in the graph is angular velocities versus time.
+# I still have to add one to two more graphs relating the angular momentum and position of the ball.
+# For some values, like mass, are trivial numbers which have not had data read in yet.
+
+
+
 import math
 import numpy as np
 import matplotlib.pyplot as plt
