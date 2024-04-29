@@ -1,3 +1,4 @@
+
 # My Python project is Newton's Cradle.
 
 # The functions listed are to show the elements of Newton's Cradle in action. Displayed currently in the graph is angular velocities versus time.
@@ -40,6 +41,7 @@
 # plt.grid(True)
 # plt.show()
 # =======
+
 
 
 import numpy as np
@@ -104,6 +106,10 @@ axs[1].legend()
 plt.subplots_adjust(hspace=0.5)
 
 plt.tight_layout()
+<<<<<<< HEAD
 plt.show()
 
 
+=======
+plt.show()
+>>>>>>> 2ea3a41 (updated project.py)
