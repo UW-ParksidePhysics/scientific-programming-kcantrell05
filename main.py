@@ -6,3 +6,6 @@
 #import loops_and_lists.table_vertical_projectile_with_lists
 #import loops_and_lists.sum_integer_reciprocals_using_while
 #import loops_and_lists.calculate_vertical_projectile_with_nested_lists
+#import functions_and_branching.sum_sines
+#import user_input_and_errors_handling.convert_fahrenheit_temperature_to_celsius_from_input
+import project.py
