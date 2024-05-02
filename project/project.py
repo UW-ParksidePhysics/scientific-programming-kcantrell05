@@ -1,12 +1,12 @@
 # My Python project is Newton's Cradle.
-# The functions listed are to show the elements of Newton's Cradle in action. Displayed currently in the graph is angular velocities versus time.
-# I still have to add one to two more graphs relating the angular momentum and position of the ball.
-# For some values, like mass, are trivial numbers which have not had data read in yet.
+# The functions listed are to show the elements of Newton's Cradle in action.
+# Displayed currently are two graphs showing the relationships between angular velocity and displacement over time.
+# The main physical principle in Newton's Cradle is elastic collisions.
+# This is observed through the conservation of momentum and energy.
 
 
-# import math
-# import numpy as np
-# import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.pyplot as plt
 
 # mass = 1
 # def conservation_of_momentum(velocity, initial_velocity=0, mass=1):
@@ -38,9 +38,7 @@
 # plt.grid(True)
 # plt.show()
 
-import numpy as np
-import matplotlib.pyplot as plt
-import math
+
 
 
 def conserve_momentum(velocity, mass):
@@ -83,13 +81,13 @@ def simulate_newtons_cradle():
 
     # Create subplots for angular velocity and angular displacement
     fig, axs = plt.subplots(2, 1, figsize=(10, 8))
-    axs[0].set_title('Angular Velocity vs Time')
     axs[0].set_xlabel('Time (s)')
     axs[0].set_ylabel('Angular Velocity (rad/s)')
+    axs[0].axhline()
 
-    axs[1].set_title('Angular Displacement vs Time')
     axs[1].set_xlabel('Time (s)')
     axs[1].set_ylabel('Angular Displacement (rad)')
+    axs[1].axhline()
 
     # Plot each initial angle separately with different colors
     for i, angle in enumerate(initial_angles):
@@ -105,11 +103,13 @@ def simulate_newtons_cradle():
                     markevery=50)
 
     # Show legends
-    axs[0].legend()
-    axs[1].legend()
+    axs[0].legend(title=r'$\theta_0$')
+
+    # Add an overall title
+    fig.suptitle('Angular Velocity and Displacement in Newtons Cradle')
 
     # Adjust layout to space out the subplots vertically
-    plt.subplots_adjust(hspace=0.5)
+    plt.subplots_adjust(hspace=1.5)
 
     plt.tight_layout()
     plt.show()
