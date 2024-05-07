@@ -1,13 +1,18 @@
 # include <stdio.h>
 # include <math.h>
+# include <stdlib.h>
 
-int main()
+int main(int argc, char* argv[])
 {
-    int a, b;
+    int a, b, maximum_c;
     double c;
 
-    int maximum_c = 50;
     double epsilon = 1e-3;
+    if (argc == 1) {
+       maximum_c = 50;
+    } else {
+       maximum_c = atoi(argv[1]);
+    }
 
     for (a = 1; a < maximum_c; a++) {
         for (b = a; b < maximum_c; b++) {
@@ -20,5 +25,4 @@ int main()
     }
     return 0;
 }
-
 
