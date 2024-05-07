@@ -1,0 +1,84 @@
+<h1>Animation Code</h1>
+<pre>import numpy as np</pre>
+<pre></pre>
+<pre>import matplotlib.pyplot as plt</pre>
+<pre></pre>
+<pre>import matplotlib.animation as animation</pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre># Function definition</pre>
+<pre></pre>
+<pre>def wave_function(x, t, alpha, f, k, w):</pre>
+<pre></pre>
+<pre>    return np.exp(-(alpha*x - f*t)**2) * np.sin(k*x - w*t)</pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre>if __name__ == "__main__":</pre>
+<pre></pre>
+<pre>    alpha = 0.5</pre>
+<pre></pre>
+<pre>    f = 3</pre>
+<pre></pre>
+<pre>    k = 3 * np.pi</pre>
+<pre></pre>
+<pre>    w = 3 * np.pi</pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre>    x_values = np.linspace(-6, 6, 1001)</pre>
+<pre></pre>
+<pre>    t_values = np.linspace(-1, 1, 61)</pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre>    fig, ax = plt.subplots()</pre>
+<pre></pre>
+<pre>    line, = ax.plot([], [])</pre>
+<pre></pre>
+<pre>    ax.set_xlim(-6, 6)</pre>
+<pre></pre>
+<pre>    ax.set_ylim(-1, 1)</pre>
+<pre></pre>
+<pre>    ax.set_xlabel('x')</pre>
+<pre></pre>
+<pre>    ax.set_ylabel('f(x, t)')</pre>
+<pre></pre>
+<pre>    ax.set_title('Wave Function Animation')</pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre>    def update(frame):</pre>
+<pre></pre>
+<pre>        t = t_values[frame]</pre>
+<pre></pre>
+<pre>        y_values = wave_function(x_values, t, alpha, f, k, w)</pre>
+<pre></pre>
+<pre>        line.set_data(x_values, y_values)</pre>
+<pre></pre>
+<pre>        return line,</pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre>    ani = animation.FuncAnimation(fig, update, frames=len(t_values), interval=1000/6)</pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre>    writer = animation.PillowWriter(fps=6)</pre>
+<pre></pre>
+<pre>    ani.save('wave_animation.gif', writer=writer)</pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre>    # Display the saved GIF separately</pre>
+<pre></pre>
+<pre>    print("Animation saved as wave_animation.gif")</pre>
+<pre></pre>
+<pre></pre>
+<h1>Plots</h1>
+<img src='wave_function_plot_0.png' alt='Wave Function Plot 0'>
+<img src='wave_function_plot_1.png' alt='Wave Function Plot 1'>
+<img src='wave_function_plot_2.png' alt='Wave Function Plot 2'>
+<h1>Animated GIF</h1>
+<img src='wave_animation.gif' alt='Wave Animation'>
