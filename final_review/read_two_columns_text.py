@@ -1,9 +1,8 @@
-@@ -0,0 +1,29 @@
-"""
-Read two columns of data from a text file.
-"""
+# """
+# Read two columns of data from a text file.
+# """
 
-__author__ = 'Cristian Marquez'
+# __author__ = 'Cristian Marquez'
 
 import numpy as np
 
