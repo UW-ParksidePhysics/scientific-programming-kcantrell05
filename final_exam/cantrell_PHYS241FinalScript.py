@@ -1,3 +1,9 @@
+# Just to preface my work, I tried unbelievably hard on this final. My brain cannot physically take anymore processing.
+# With continuing, I would be jeopardizing my physical health from my conditions.
+# I do not expect to be graded differently because of this, and it is a note for you that I simply cannot finish this the way I wanted to.
+# Thank you for your understanding throughout the entirety of my first semester at UW-Parkside, and I look forward to your future courses.
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 from calculate_bivariate_statistics import compute_bivariate_statistics
