@@ -1,10 +1,9 @@
+# """
+# Contains energy-volume equations of state together with a function for fitting them
+# given energy-volume data and starting-guess coefficients
+# """
 
-"""
-Contains energy-volume equations of state together with a function for fitting them
-given energy-volume data and starting-guess coefficients
-"""
-
-__author__ = 'Ryan Glusic and William Parker'
+# __author__ = 'Ryan Glusic and William Parker'
 
 import numpy as np
 
